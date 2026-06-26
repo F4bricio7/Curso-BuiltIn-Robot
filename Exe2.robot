@@ -4,33 +4,33 @@
 
 *** Keywords ***
 #Keyword do exercício 1
-Definir Nome e Idade
-    ${Nome}=    Set Variable    Fabricio
-    ${Idade}=   Set Variable    21
-    RETURN      ${Nome}     ${Idade}
+Definir Nome E Idade
+    ${NOME}=    Set Variable    Fabricio
+    ${IDADE}=   Set Variable    21
+    RETURN      ${NOME}     ${IDADE}
 
 #Keyword do exercício 2
-Receber Dados e Fazer o Log
-    [Arguments]     ${Nome}     ${Idade}
-    Log To Console  ${Nome}
-    Log To Console  ${Idade}        
+Receber Dados E Fazer O Log
+    [Arguments]     ${NOME}     ${IDADE}
+    Log To Console  ${NOME}
+    Log To Console  ${IDADE}        
 
  #Keyword do exercício 2
-${Nome} Tem ${Idade} Anos
-    Log To Console  ${Nome}
-    Log To Console  ${Idade}
+${NOME} Tem ${IDADE} Anos
+    Log To Console  ${NOME}
+    Log To Console  ${IDADE}
 
 *** Test Cases ***
 #Exercício 1
 Recebe Dados
-    ${Nome}     ${Idade}=   Definir Nome e Idade
-    Log To Console     ${Nome}
-    Log To Console     ${Idade}
+    ${NOME}     ${IDADE}=   Definir NOME e IDADE
+    Log To Console     ${NOME}
+    Log To Console     ${IDADE}
 
 #Exercício 2
 Mandando Dados
     Receber Dados e Fazer o Log  Crstiano Ronaldo  41
 
 #Exercício 3
-Mandando Dados Pelo o Nome Da Keyword
+Mandando Dados Pelo O Nome Da Keyword
     Fabricio Tem 21 Anos

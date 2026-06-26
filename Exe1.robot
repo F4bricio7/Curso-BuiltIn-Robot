@@ -1,36 +1,36 @@
 *** Settings ***
 
 *** Variables ***
-${Cor}  vermelho
+${COR}  vermelho
 
 *** Keywords ***
 
 ### Keyword do exercício 2
-Definindo A Rua
-    VAR     ${Rua}      12 de Agosto
-    Set Test Variable   ${Rua} 
+Definindo A RUA
+    VAR     ${RUA}      12 de Agosto
+    Set Test Variable   ${RUA} 
 *** Test Cases ***
 
 ### Exercício 1 (falha proposital)
 Set Da Variável
-    VAR    ${Nome}     Fabricio
+    VAR    ${NOME}     Fabricio
 
 Log Da Variável
-    log     ${Nome}
+    log     ${NOME}
 
 ### Exercício 2
 Alterar A Variável Pelo Escopo De Teste
     Definindo A Rua 
-    Log     ${Rua}
+    Log     ${RUA}
 
 ### Exercício 3
 Mudando Escopo Da Variavel Para Global
-    VAR     ${Numero}   1234
-    Set Global Variable     ${Numero}
+    VAR     ${NUMERO}   1234
+    Set Global Variable     ${NUMERO}
 
 Fazendo Log Da Variavel Global
-    Log     ${Numero}
+    Log     ${NUMERO}
 
 ### Exercício 3
 Log Da Variavel Defininda Em "Variables"
-    Log     ${Cor}
+    Log     ${COR}
